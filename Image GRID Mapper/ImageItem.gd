@@ -16,6 +16,9 @@ func init(img_path):
 	$TextureRect.texture = t
 	rect_size = $TextureRect.texture.get_size()
 	data.path = img_path
+	
+	var popup = $MenuButton.get_popup()
+	popup.connect("id_pressed", self, "menu_button_pressed")
 
 func _on_ImageItem_resize_request(new_minsize: Vector2) -> void:
 	rect_size = new_minsize
@@ -25,3 +28,23 @@ func _on_ImageItem_resize_request(new_minsize: Vector2) -> void:
 func _on_ImageItem_offset_changed() -> void:
 	data.offset_x = offset.x
 	data.offset_y = offset.y
+	
+func _on_ImageItem_gui_input(event: InputEvent) -> void:
+	if event is InputEventMouseButton:
+		if event.button_index == BUTTON_RIGHT:
+			queue_free()
+
+func _on_ImageItem_mouse_entered() -> void:
+	$MenuButton.show()
+
+func _on_ImageItem_mouse_exited() -> void:
+	$MenuButton.hide()
+
+func _on_MenuButton_mouse_entered() -> void:
+	$MenuButton.show()
+
+func menu_button_pressed(id):
+	if id == 0:
+		queue_free()
+
+

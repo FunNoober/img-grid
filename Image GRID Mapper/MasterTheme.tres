@@ -1,6 +1,7 @@
-[gd_resource type="Theme" load_steps=15 format=2]
+[gd_resource type="Theme" load_steps=16 format=2]
 
 [ext_resource path="res://Roboto-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://close_image.png" type="Texture" id=2]
 
 [sub_resource type="StyleBoxFlat" id=8]
 bg_color = Color( 0, 0, 0, 0.25098 )
@@ -163,7 +164,9 @@ Button/styles/hover = SubResource( 4 )
 Button/styles/normal = SubResource( 9 )
 Button/styles/pressed = SubResource( 2 )
 GraphEdit/styles/bg = SubResource( 5 )
+GraphNode/colors/close_color = Color( 1, 1, 1, 1 )
 GraphNode/colors/title_color = Color( 1, 1, 1, 1 )
+GraphNode/icons/close = ExtResource( 2 )
 GraphNode/styles/frame = SubResource( 12 )
 GraphNode/styles/selectedframe = SubResource( 13 )
 HScrollBar/styles/grabber = SubResource( 10 )
