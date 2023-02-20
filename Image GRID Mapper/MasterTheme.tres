@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=16 format=2]
+[gd_resource type="Theme" load_steps=18 format=2]
 
 [ext_resource path="res://Roboto-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://close_image.png" type="Texture" id=2]
@@ -132,6 +132,24 @@ corner_radius_top_right = 2
 corner_radius_bottom_right = 2
 corner_radius_bottom_left = 2
 
+[sub_resource type="StyleBoxFlat" id=16]
+bg_color = Color( 0.203922, 0.341176, 0.396078, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.376471, 0.639216, 0.737255, 0.501961 )
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id=15]
+bg_color = Color( 0.203922, 0.341176, 0.396078, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.376471, 0.639216, 0.737255, 0.501961 )
+border_blend = true
+
 [sub_resource type="StyleBoxFlat" id=14]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
 
@@ -172,6 +190,9 @@ GraphNode/styles/selectedframe = SubResource( 13 )
 HScrollBar/styles/grabber = SubResource( 10 )
 HScrollBar/styles/scroll = SubResource( 11 )
 LineEdit/styles/normal = SubResource( 6 )
+MenuButton/colors/font_color = Color( 0.964706, 0.72549, 0.231373, 1 )
+PopupMenu/styles/hover = SubResource( 16 )
+PopupMenu/styles/panel = SubResource( 15 )
 Tree/styles/bg = SubResource( 14 )
 VScrollBar/styles/grabber = SubResource( 10 )
 VScrollBar/styles/scroll = SubResource( 11 )

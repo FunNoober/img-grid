@@ -35,7 +35,8 @@ func _on_ImageItem_gui_input(event: InputEvent) -> void:
 			queue_free()
 
 func _on_ImageItem_mouse_entered() -> void:
-	$MenuButton.show()
+	pass
+	#$MenuButton.show()
 
 func _on_ImageItem_mouse_exited() -> void:
 	$MenuButton.hide()
